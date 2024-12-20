@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: aqua;
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: 10vh 70vh 20vh;
+            grid-template-areas: "header header " "section1 section2" "footer footer ";
+            grid-gap: 20px;
+        }
+        .header{
+            background-color: rgb(158, 158, 250);
+            grid-area: header;
+        }
+        .section1{
+            background-color: rgb(136, 244, 136);
+            grid-area: section1;
+            padding: 50px;
+        }
+        .section2{
+            background-color: rgb(108, 245, 158);
+            grid-area: section2;
+            padding: 50px;
+        }
+       
+        .footer{
+                    background-color: rgb(174, 237, 110);
+                    grid-area: footer;
+                }
+                p{
+                    text-align: center;
+                    font-size: 30px;
+                font-family: 'Times New Roman', Times, serif;              
+              }
+              h1{
+                text-align: center;
+              }
+              h3{
+                text-align: center;
+              }
+              article{
+                text-align: center;
+                background-color: aqua;
+                width: 200px;
+                height: 200px;
+                align-content: center;
+                /* position: relative;
+                left: 100px;
+                /* top: 50px; */
+              } 
+              section{
+                
+                text-align: center;
+                background-color: aqua;
+                width: 200px;
+                height: 200px;
+                align-content: center;
+                /* position: relative;
+                left: 100px;
+                top: 50px; */
+              }
+           @media screen and (max-width: 300px) {
+            .container {
+                background-color: aqua;
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: 10vh 70vh 20vh;
+            grid-template-areas: "header header " "section1 section2" "footer footer ";
+            grid-gap: 20px;
+                }
+            
+           }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="header"><h1> Html Header</h1></div>
+        <div class="section1"><p>Main Content</p>
+        <article>
+            <p> Article <br>Some text here</p>
+        </article>
+        </div>
+        <div class="section2"><p>Side Content</p>
+        <section>
+            <p> section <br>Some text here</p>
+        </section>
+        </div>
+        
+        <div class="footer"><h3>© 2024 Semantic Layout</h3></div>
+    </div>
+    
+</body>
+</html>
